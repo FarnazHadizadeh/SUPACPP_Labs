@@ -1,0 +1,11 @@
+CXX = g++
+CXXFLAGS = -Wall -O2
+
+SRC = src/main.cxx src/FiniteFunctions.cxx src/CustomDistributions.cxx
+OUT = assignment2
+
+all:
+	$(CXX) $(CXXFLAGS) $(SRC) -o $(OUT)
+
+clean:
+	rm -f assignment2
